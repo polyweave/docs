@@ -73,9 +73,26 @@ definitions:
         type: string
         format: date-time
         example: 2004-10-19 10:23:54
+      amount:
+        type: number
+        example: 2.2
       type:
         type: string
         example: NFT Purchase
+      source:
+        type: string
+        example: Magic Eden
+      tokensInvolved:
+        type: array
+        items:
+          type: string
+        example: []
+      to:
+        type: string
+        example: BXnrt36feBqtJ3zXAXL6REPKZVhKrntK1FnucnL8Ks8U
+      from:
+        type: string
+        example: AXnrt36feBqtJ3zXAXL6REPKZVhKrntK1FnucnL8Ks8U
 
 
 schemes:
