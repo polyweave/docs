@@ -18,15 +18,15 @@ info:
 
 # tags are used for organizing operations
 tags:
-  - name: developers
-    description: Operations available to regular developers
+  - name: Solana
+    description: Solana endpoints
 
 paths:
   /solana/transactions:
     get:
       tags:
-        - developers
-      summary: returns Solana transactoions
+        - Solana
+      summary: returns Solana transactions
       operationId: getTransactions
       description: |
         By passing in the appropriate options, you can get transactions 
@@ -48,6 +48,12 @@ paths:
         - in: query
           name: api-key
           description: api key
+          type: string
+          required: true
+          minimum: 0
+        - in: query
+          name: address
+          description: address
           type: string
           required: true
           minimum: 0
